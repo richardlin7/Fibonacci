@@ -1,4 +1,12 @@
-console.log(fibonacci(10));
+const readline = require("readline").createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+readline.question("What's the number?", (num) => {
+  console.log(fibonacci(num));
+  readline.close();
+});
 
 function fibonacci(n) {
   if (n === 0) {
