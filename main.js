@@ -1,4 +1,4 @@
-const readline = require("readline").createInterface({
+/*const readline = require("readline").createInterface({
   input: process.stdin,
   output: process.stdout,
 });
@@ -6,7 +6,13 @@ const readline = require("readline").createInterface({
 readline.question("What's the number?", (num) => {
   console.log(fibonacci(num));
   readline.close();
-});
+});*/
+
+const prompt = require("prompt-sync")();
+
+n = prompt("What's the number? ");
+
+console.log(fibonacci(n));
 
 function fibonacci(n) {
   if (n === 0) {
