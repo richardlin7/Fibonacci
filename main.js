@@ -10,7 +10,7 @@ readline.question("What's the number?", (num) => {
 
 const prompt = require("prompt-sync")();
 
-n = prompt("What's the number? ");
+const n = prompt("What's the number? ");
 
 console.log(fibonacci(n));
 
