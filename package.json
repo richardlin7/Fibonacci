@@ -1,7 +1,23 @@
 {
-	"name": "Fibonacci",
-	"version": "1.0.0",
-	"dependencies": {
-		"prompt-sync": "^4.2.0"
-	}
+  "name": "fibonacci",
+  "version": "1.0.0",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "description": "Simple Javascript code demonstrating Fibonacci.",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichardLin7/Fibonacci.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RichardLin7/Fibonacci/issues"
+  },
+  "homepage": "https://github.com/RichardLin7/Fibonacci#readme"
 }
