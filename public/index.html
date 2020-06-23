@@ -1,15 +1,20 @@
 <html>
-	<head>
-		<title>Nth Fibonacci digit calculator</title>
-	</head>
-	<body>
-		<input
-			id="input"
-			name="input"
-			placeholder="Enter n for nth Fibonacci digit"
-		/>
-		<h1>Digit</h1>
-		<section id="output"></section>
-		<script src="./main.js"></script>
-	</body>
+  <head>
+    <title>Nth Fibonacci digit calculator</title>
+  </head>
+  <body>
+    <input
+      id="input"
+      name="fibNum"
+      placeholder="Enter n for nth Fibonacci digit"
+      value="10"
+    />
+    <button onclick="onClick()">Submit</button>
+    <h1>Digit</h1>
+    <section id="output"></section>
+
+    <script src="index.js"></script>
+    <script src="fibonacci.js"></script>
+    <script src="fibonacci-reverse.js"></script>
+  </body>
 </html>

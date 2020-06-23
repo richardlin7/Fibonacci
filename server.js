@@ -1,6 +1,10 @@
 const express = require("express");
-const server = express();
 
-server.use(express.static("public"));
+const app = express();
+const PORT = (process.env.PORT = 8080);
 
-server.listen(8080);
+app.use(express.static("public"));
+
+app.listen(PORT, () => {
+  console.log("Server is running at: ", PORT);
+});
