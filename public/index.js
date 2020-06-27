@@ -1,4 +1,5 @@
 //const { response } = require("express");
+var url = "http://162.243.173.140:8080";
 
 function onClick() {
   // recieve input from text box
@@ -9,13 +10,17 @@ function onClick() {
 }
 
 function onClick1() {
-  fetch("http://162.243.173.140:4000")
-    .then((response) => {
-      return random();
+  fetch(url)
+    .then(function (response) {
+      return response.text();
     })
-    .then((users) => {
-      console.log(users);
+    .then(function (text) {
+      document.getElementById("random").textContent = text;
+    })
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => {
+      console.error("There is a issue with your fetch operation: ", error);
     });
-
-  document.getElementById("output").textContent = 0;
 }
