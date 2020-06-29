@@ -1,5 +1,5 @@
 //const { response } = require("express");
-var url = "http://162.243.173.140:8000";
+var url = "http://162.243.173.140:8000/";
 // var url = "http://localhost:8000/";
 
 function onClick() {
